@@ -1,4 +1,8 @@
 
+@font-face{
+  font-family:"PRISTINA";
+  src: url("../fuente/pristina.TTF") format("truetype");
+}
 
 body{
   background-color: #E6EE9C;
@@ -13,8 +17,18 @@ body{
     display: flex;
     justify-content: center;
     background-color: rgba(194, 255, 255, 0.6);
-  }
+    height: 25vh;
 
+
+  }
+  .travel-flex{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #E67E22;
+  }
+  .travel-flex:hover{
+    opacity: 0.3;
+  }
 
   .btn-wsp{
       position:fixed;
@@ -46,7 +60,8 @@ body{
 h1{
   background-color: black;
   color: white;
-  font-family: "Times New Roman", Times, sans-serif;
+  font-family: "fuente"
+  src: url("../fuente/RAGE.TTF") format("truetype");
   font-size:56px;
   text-align:center;
   border-left: 10px solid black;
@@ -67,12 +82,12 @@ header {
 }
 
 nav {
-  float: center;
+  float: none;
 }
 
 nav ul li {
   list-style: none;
-  margin-left: 150px;
+  margin-left: 80px;
   padding: 10px 0;
   float: left;
   position: relative;
