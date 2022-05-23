@@ -119,6 +119,11 @@ section{
   width: 48%;
   float: left;
   margin: 1%
+  -webkit-transition: 1s linear;
+  transition: 1s linear
+}
+section{
+  border-radius: 20px;
 }
 
 aside{
@@ -128,7 +133,9 @@ aside{
   float: left;
   margin: 1%
 }
-
+aside{
+  border-radius: 20px;
+}
 
 footer {
   background-color:black ;
@@ -171,7 +178,8 @@ footer {
   font-family: "PRISTINA";
   src: url("../fuente/pristina.TTF") format("truetype");
   font-size: 200%;
-
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
 }
 
 nav UL a:hover{
