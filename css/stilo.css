@@ -3,6 +3,11 @@
   font-family:"PRISTINA";
   src: url("../fuente/pristina.TTF") format("truetype");
 }
+@font-face {
+  font-family: "fuente"
+  src: url("../fuente/RAGE.TTF") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body{
   background-color: #E6EE9C;
@@ -11,6 +16,14 @@ body{
   font-family: Arial, serif, sans-serif;
   font-size: 20px;
   padding: 5px; margin: 10px; solid black; float: center; width: 1230px;
+
+  }
+
+  @media (max-whidth:700px) {
+    h1{
+      background-color: #444;
+      color:green;
+    }
 
   }
   .travel-flex{
@@ -29,6 +42,18 @@ body{
   .travel-flex:hover{
     opacity: 0.3;
   }
+
+  @media (max-whidth:700px){
+    .travel-flex{
+      display: none;
+    }
+  }
+   @media (min-whidth:700px) {
+    .andalucia{
+      display: none;
+    }
+}
+
 
   .btn-wsp{
       position:fixed;
@@ -60,8 +85,7 @@ body{
 h1{
   background-color: black;
   color: white;
-  font-family: "fuente"
-  src: url("../fuente/RAGE.TTF") format("truetype");
+  font-family:"PRISTINA"
   font-size:56px;
   text-align:center;
   border-left: 10px solid black;
@@ -85,6 +109,7 @@ nav {
   float: none;
 }
 
+
 nav ul li {
   list-style: none;
   margin-left: 80px;
@@ -102,7 +127,7 @@ nav ul li a {
 nav ul li a::before {
   display: block;
   content: '';
-  width: 1%;
+  width: 3%;
   background: red;
   height: 8px;
   top:0;
@@ -124,6 +149,17 @@ section{
 }
 section{
   border-radius: 20px;
+}
+section{
+  font-family: "Dancing"
+}
+section{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+section:hover{
+  -webkit-transform: perspective(150px) rotateX(45deg);
+  transform: perspective(150px) rotateX(45deg);
 }
 
 aside{
